@@ -1,5 +1,3 @@
-
-
 def combine_character(plain, keyword):
     plain = plain.upper()
     keyword = keyword.upper()
