@@ -7,9 +7,11 @@ def combine_character(plain, keyword):
     relative_ord = (plain_num + keyword_num) % 26
     return chr(start_ord + relative_ord)
 
+
 def extend_keyword(keyword, number):
     repeats = number // len(keyword) + 1
     return (keyword * repeats)[:number]
+
 
 class VigenereCipher:
     def __init__(self, keyword):

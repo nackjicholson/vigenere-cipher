@@ -1,5 +1,10 @@
 import unittest
-from vigenere_cipher.cipher import VigenereCipher, combine_character, extend_keyword
+from vigenere_cipher.cipher import (
+    VigenereCipher,
+    combine_character,
+    extend_keyword
+)
+
 
 class TestVigenereCipher(unittest.TestCase):
     def test_encode(self):
@@ -46,6 +51,7 @@ class TestVigenereCipher(unittest.TestCase):
 
         self.assertEqual(actual, expected)
 
+
 class TestCombineCharacter(unittest.TestCase):
     def test_combine_character(self):
         """
@@ -54,6 +60,7 @@ class TestCombineCharacter(unittest.TestCase):
         """
         self.assertEqual(combine_character('E', 'T'), 'X')
         self.assertEqual(combine_character('N', 'R'), 'E')
+
 
 class TestExtendKeyword(unittest.TestCase):
     def test_extend_keyword(self):
